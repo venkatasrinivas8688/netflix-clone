@@ -75,7 +75,7 @@ class HomeSection extends Component {
   }
 
   renderPosterLoadingView = () => (
-    <div className="home-loader-container" testid="loader">
+    <div className="home-loader-container" data-testid="loader">
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
@@ -115,7 +115,7 @@ class HomeSection extends Component {
   }
 
   renderOriginalsLoadingView = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container" data-testid="loader">
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )

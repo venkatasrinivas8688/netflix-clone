@@ -84,7 +84,7 @@ class Header extends Component {
                   type="button"
                   className="search-button"
                   onClick={this.onShowSearchInput}
-                  testid="searchButton"
+                  data-testid="searchButton"
                 >
                   <HiOutlineSearch size={18} color="#ffffff" />
                 </button>

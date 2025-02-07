@@ -8,11 +8,31 @@ import './index.css'
 const VideosSlider = props => {
   const settings = {
     dots: false,
-    slidesToScroll: 1,
+    infinite: false,
+    speed: 500,
     slidesToShow: 4,
+    slidesToScroll: 2,
+    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -20,6 +40,7 @@ const VideosSlider = props => {
       },
     ],
   }
+
   const {videoData} = props
 
   return (
